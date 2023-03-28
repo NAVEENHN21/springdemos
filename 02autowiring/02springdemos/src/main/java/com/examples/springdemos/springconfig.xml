@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+  
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+   
+
+    
+        <bean name="homecomputer" class="com.examples.springcoreapp.Computer" p:name="xyzbank" scope="prototype">
+        	<constructor-arg><value>4</value></constructor-arg>
+        	        	<constructor-arg><value>8gb</value></constructor-arg>
+        	
+        	        	<constructor-arg><value>500gb</value></constructor-arg>
+        	
+        </bean>
+        
+                <bean name="officecomputer" class="com.examples.springcoreapp.Computer" c:cpu="8" c:memory="20gb" c:storage="512gb"/>
+        
+        
+    
+ 
+   
+
+    
+
+ </beans>
