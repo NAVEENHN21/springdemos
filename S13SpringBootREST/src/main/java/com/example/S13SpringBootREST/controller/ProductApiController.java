@@ -13,8 +13,8 @@ import com.example.S13SpringBootREST.entity.Product;
 import com.example.S13SpringBootREST.repository.ProductRepository;
 
 @RestController
-@RequestMapping("/products")
-public class ProductController {
+@RequestMapping("/api/products")
+public class ProductApiController {
 	
 	@Autowired
 	private ProductRepository repository;
